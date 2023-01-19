@@ -1,0 +1,480 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --dark-color: #212934;
+    --text-color: #212529;
+    --section-color: #f8f9fa;
+    --white-color: #fff;
+    --another-sec-color: #6c757d;
+    --icons-color: #cfd6e1;
+    --green-color: #59ab6e;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* START CONTACT INFO */
+.contact-info {
+    background-color: var(--dark-color);
+    font-size: 12px;
+}
+.contact-info .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-info .info-one {
+    color: var(--icons-color);
+}
+.contact-info .info-one svg {
+    margin: 0 8px 0 0;
+}
+.contact-info .info-one span {
+    margin-right: 8px;
+    cursor: pointer;
+    font-weight: 300;
+}
+.contact-info .info-two .social ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.contact-info .info-two .social ul li a {
+    text-decoration: none;
+    color: var(--icons-color);
+    margin-right: 15px;
+}
+@media (max-width: 992px) {
+    .contact-info {
+        display: none;
+    }
+}
+/* END CONTACT INFO */
+
+
+
+
+
+/* START NAVBAR */
+.navbar {
+    background-color: var(--white-color) !important;
+}
+.zay-style {
+    font-size: 48px;
+    color: var(--green-color);
+    font-weight: 500;
+}
+.zay-style:hover {
+    color: var(--green-color);
+}
+.navbar .navbar-nav .nav-link {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--dark-color);
+    margin: 0 25px;
+    transition: 0.3s;
+}
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--green-color);
+}
+/* END NAVBAR */
+
+
+
+/* START LANDING */
+.landing {
+    background-color: rgba(238, 238, 238, 0.959) !important;
+}
+.landing .left-icon {
+    color: var(--green-color);
+    font-size: 26px;
+}
+.landing .right-icon {
+    color: var(--green-color);
+    font-size: 26px;
+}
+/* END LANDING */
+
+
+
+
+/* START CATEGORIES */
+.categories {
+    background-color: var(--white-color);
+}
+.main-heading {
+    text-align: center;
+    padding: 0 12px 0;
+}
+.main-heading h1 {
+    font-size: 48px;
+    font-weight: 200;
+}
+.main-heading p {
+    font-size: 18px;
+    font-weight: 300;
+}
+.categories img {
+    width: 350px;
+    border-radius: 50%;
+}
+.categories .row {
+    text-align: center;
+}
+.categories .row h5 {
+    margin: 15px 0 25px;
+}
+.categories .row a {
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: var(--green-color);
+    color: white;
+    border-radius: 4px;
+    font-weight: 300;
+    font-size: 17px;
+}
+@media (max-width: 767px) {
+    .categories img {
+        margin-top: 50px;
+    }
+}
+/* END CATEGORIES */
+
+
+
+
+/* START FEATURED PRODUCT */
+.featured {
+    background-color: rgba(238, 238, 238, 0.959);
+}
+@media (max-width: 767px) {
+    .featured .box {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.featured .rate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.featured .rate .stars .yellow-cl {
+    color: rgba(248, 248, 23, 0.911);
+}
+.featured .rate .stars svg {
+    color: rgba(221, 221, 221, 0.897);
+}
+.featured .rate .money span {
+    color: #bcbcbc;
+    font-size: 18px;
+    font-weight: 300px;
+}
+.featured .info h2 {
+    font-size: 30px;
+    font-weight: 300;
+}
+.featured .info p {
+    font-size: 18px;
+    font-weight: 300;
+}
+.featured .info span {
+    color: #bcbcbc;
+    font-size: 18px;
+    font-weight: 300;
+}
+/* END FEATURED PRODUCT */
+
+
+
+
+
+/* START FOOTER */
+.footer {
+    background-color: #212934;
+}
+.footer .first-list h2 {
+    font-size: 30px;
+    color: #59ab6e;
+    font-weight: 500;
+    border-bottom: 1px solid #2d343f;
+}
+.footer .row ul {
+    list-style: none;
+    padding: 0;
+}
+.footer .row .ic-txt {
+    padding: 0;
+}
+.footer .row ul li svg {
+    font-size: 18px;
+    color: var(--icons-color);
+    margin-right: 12px;
+}
+.footer .row ul li {
+    margin-top: 20px;
+}
+.footer .row ul li a {
+    text-decoration: none;
+    color: var(--icons-color);
+    font-size: 18px;
+    font-weight: 300;
+    transition: 0.3s;
+}
+.footer .row ul li a:hover {
+    color: var(--green-color);
+}
+.footer .second-list h2 {
+    color: var(--icons-color);
+    font-size: 30px;
+    font-weight: 300;
+    border-bottom: 1px solid #2d343f;
+}
+.footer .third-list h2 {
+    color: var(--icons-color);
+    font-size: 30px;
+    font-weight: 300;
+    border-bottom: 1px solid #2d343f;
+}
+.footer .row .btw {
+    width: 100%;
+    height: 1px;
+    background-color: #2d343f;
+    margin: 15px 0;
+}
+.footer .social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+@media (max-width: 767px) {
+    .footer .social {
+        flex-direction: column;
+    }
+    .footer .second-list h2 {
+        margin-top: 40px;
+    }
+    .footer .third-list h2 {
+        margin-top: 40px;
+    }
+    .footer .social {
+        margin: 30px 0;
+    }
+}
+.footer .social .soc-list ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .social .soc-list ul li a {
+    text-decoration: none;
+}
+.footer .social .soc-list ul li a svg {
+    font-size: 28px;
+    margin-right: 25px;
+    color: var(--icons-color);
+    transition: 0.3s;
+}
+.footer .social .soc-list ul li a svg:hover {
+    color: #1d242d;
+}
+.footer .social .sub-inp {
+    max-width: 230px !important;
+    border: 1px solid #2d343f !important;
+    color: #fff !important;
+    background-color: #212934 !important;
+}
+.footer .social .sub-inp::placeholder {
+    color: var(--icons-color) !important;
+    font-weight: 300 !important;
+}
+.footer .social .subscribe-inp {
+    background-color: #59ab6e !important;
+    border-color: #56ae6c !important;
+    color: var(--icons-color) !important;
+    cursor: pointer !important;
+}.copyright {
+    background-color: #1d242d;
+}
+.copyright .p-copy {
+    color: var(--icons-color);
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0;
+}
+@media (max-width: 767px) {
+    .copyright .p-copy {
+        font-size: 16px;
+    }
+}
+.copyright span {
+    color: var(--green-color);
+}
+/* END FOOTER */
+
+
+
+
+
+
+
+
+
+
+/* ============================== ABOUT PGE ============================== */
+/* START ABOUT LANDING */
+.about-landing {
+    background-color: #59ab6e;
+}
+.about-landing .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 767px) {
+    .about-landing .about-content {
+        flex-direction: column;
+    }
+}
+.about-landing .about-content .text h1 {
+    color: #fff;
+    font-weight: 500;
+}
+.about-landing .about-content .text p {
+    max-width: 700px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+}
+.about-landing .about-content .image img {
+    max-width: 100%;
+    width: 400px;
+}
+/* END ABOUT LANDING */
+
+
+
+
+/* START OUR SERVICES .del-txt*/
+.about-services {
+    background-color: #fff;
+}
+.about-services .box {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    background-color: #fff;
+    text-align: center;
+    margin-top: 40px;
+}
+@media (max-width: 767px) {
+    .about-services .box {
+        margin-top: 40px;
+    }
+}
+.about-services .box .info svg {
+    font-size: 55px;
+    color: var(--green-color);
+}
+.about-services .box .info h2 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #212529;
+}
+/* END OUR SERVICES */
+
+
+
+
+/* START OUR BRANDS */
+.our-brands {
+    background-color: #e9eef5;
+}
+.our-brands .drag-left {
+    color: var(--icons-color) !important;
+}
+.our-brands .drag-right {
+    color: var(--icons-color) !important;
+}
+@media (max-width: 767px) {
+    .our-brands .drag-left {
+        font-size: 20px !important;
+    }
+    .our-brands .drag-right {
+        font-size: 20px !important;
+    }
+}
+/* END OUR BRANDS */
+
+
+
+
+
+
+
+
+
+
+/* ============================== SHOP PGE ============================== */
+.shop {
+    background-color: #fff;
+}
+.shop .shop-content .row .card {
+    margin-top: 40px;
+}
+.shop .shop-content .row h3 {
+    font-size: 18px;
+    font-weight: 300;
+    color: #000;
+    margin: 0;
+}
+.shop .shop-content .row span {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 5px 0;
+    display: block;
+}
+.shop .shop-content .row .stars {
+    text-align: center;
+}
+.shop .shop-content .row .stars .yellow-cl {
+    color: rgba(248, 248, 23, 0.911);
+}
+.shop .shop-content .row .stars svg {
+    color: rgba(221, 221, 221, 0.897);
+}
+.shop .shop-content .row .money {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 5px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================== CONTACT PGE ============================== */
+.contact-us {
+    background-color: #e9eef5;
+}
+.maps iframe {
+    width: 100%;
+    height: 300px;
+}
